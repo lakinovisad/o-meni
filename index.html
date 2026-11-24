@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport: da stranica lepo izgleda na telefonu -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zoran – komercijalista na terenu koji uči AI automatizaciju i pravi AI agente za male firme.">
+  <title>Zoran – O meni</title>
+  <style>
+    /* ===== Boje na jednom mestu: lako menjaš izgled ===== */
+    :root {
+      --zelena: #1f9d62;
+      --zelena-tamna: #14724a;
+      --zelena-svetla: #e7f6ee;
+      --tekst: #1d2b24;
+      --tekst-blagi: #55665d;
+      --pozadina: #f7faf8;
+      --bela: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--pozadina);
+      color: var(--tekst);
+      line-height: 1.65;
+    }
+
+    /* Sadržaj je centriran i ne postaje preširok na velikom ekranu */
+    .okvir {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ===== Zaglavlje ===== */
+    header {
+      background: linear-gradient(135deg, var(--zelena), var(--zelena-tamna));
+      color: var(--bela);
+      padding: 64px 0 56px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: clamp(2.2rem, 8vw, 3.4rem);
+      line-height: 1.15;
+    }
+    header p {
+      margin-top: 12px;
+      font-size: clamp(1.05rem, 3.5vw, 1.3rem);
+      font-weight: 600;
+      color: #ffe66d; /* žuta boja se odlično vidi na zelenoj pozadini */
+    }
+
+    /* ===== Sekcije ===== */
+    section { padding: 44px 0 8px; }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+      color: var(--zelena-tamna);
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 4px;
+      margin-top: 8px;
+      border-radius: 2px;
+      background: var(--zelena);
+    }
+    p { color: var(--tekst-blagi); font-size: 1.05rem; }
+    p + p { margin-top: 12px; }
+
+    /* ===== Kartice (Šta učim) ===== */
+    .kartice {
+      display: grid;
+      gap: 16px;
+      margin-top: 8px;
+      /* Na telefonu jedna ispod druge, na većem ekranu jedna pored druge */
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+    .kartica {
+      background: var(--bela);
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 2px 10px rgba(20, 114, 74, 0.1);
+      border-top: 4px solid var(--zelena);
+    }
+    .kartica h3 { font-size: 1.15rem; margin-bottom: 6px; }
+    .kartica p { font-size: 0.98rem; }
+
+    /* ===== Cilj ===== */
+    .cilj {
+      background: var(--zelena-svetla);
+      border-left: 5px solid var(--zelena);
+      border-radius: 10px;
+      padding: 22px;
+    }
+    .cilj p { color: var(--tekst); }
+
+    /* ===== Podnožje ===== */
+    footer {
+      margin-top: 56px;
+      padding: 24px 0 36px;
+      text-align: center;
+      color: var(--tekst-blagi);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Naslov sa imenom -->
+  <header>
+    <div class="okvir">
+      <h1>Zdravo, ja sam Zoran 👋</h1>
+      <p>Komercijalista na terenu koji uči da pametno radi uz AI</p>
+    </div>
+  </header>
+
+  <main class="okvir">
+
+    <!-- Kratko predstavljanje -->
+    <section>
+      <h2>Ko sam ja</h2>
+      <p>
+        Radim kao komercijalista na terenu, pa su ljudi moj svakodnevni posao.
+        Znam kako je kad ti treba brzo, jednostavno rešenje, a ne komplikovana priča.
+      </p>
+      <p>
+        Pored posla učim kako da AI preuzme dosadne, ponavljajuće poslove,
+        da ljudi mogu da se posvete onome što stvarno vredi.
+      </p>
+    </section>
+
+    <!-- Šta učim -->
+    <section>
+      <h2>Šta učim</h2>
+      <div class="kartice">
+        <div class="kartica">
+          <h3>⚙️ AI automatizacija</h3>
+          <p>Kako da se posao koji se stalno ponavlja radi sam od sebe.</p>
+        </div>
+        <div class="kartica">
+          <h3>🤖 AI agenti</h3>
+          <p>Digitalni pomoćnici koji razumeju zadatak i obave ga umesto mene.</p>
+        </div>
+        <div class="kartica">
+          <h3>💻 Claude Code</h3>
+          <p>Pravim stvari uz pomoć AI-ja, u VibeCode Academy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moj cilj -->
+    <section>
+      <h2>Moj cilj</h2>
+      <div class="cilj">
+        <p>
+          Želim da radim kao freelancer i pomažem malim firmama:
+          da automatizuju poslove koji im oduzimaju vreme i da dobiju
+          svog AI agenta koji im radi na ruku.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="okvir">© Zoran · Stranica napravljena uz Claude Code</div>
+  </footer>
+
+</body>
+</html>
